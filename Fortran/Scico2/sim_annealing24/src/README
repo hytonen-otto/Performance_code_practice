@@ -1,0 +1,6 @@
+COMPILATION INSTRUCTIONS
+
+The code can be compiled with one command:
+gfortran -O2 mtfort90.f90 boxes.f90 inout.f90 movement.f90 algorithm.f90 main.f90
+
+You may want to move the compiled a.out file to the /run directory.

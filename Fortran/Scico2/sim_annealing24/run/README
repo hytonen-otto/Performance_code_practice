@@ -1,0 +1,26 @@
+RUN INSTRUCTIONS:
+
+Example run command:
+time ./a.out 0.1 0.8 50  output1.dat output2.dat output3.dat
+
+Command line inputs:
+1. The initial value of the control parameter c. 0.1 gives good results
+2. The cooling parameter alpha 0.8 gives good results
+3. The number of boxes. A run with  50 boxes takes 1.5seconds, a run with 200 boxes takes 30 seconds
+4. Filename for the file for drawing the initial positions of the boxes.
+5. Filename for the file for drawing the final positions of the boxes. 
+6. Filename for the file for the plot of the footprint as a function of iterations
+
+Values 1 and 2 shouldn't be changed from 0.1 and 0.8 if the program is not changed. 
+They are taken in from the cmd line because after tweaking the code these 
+values are foud by trial and error.
+
+IMPORTANT: If given a filename that already exists, the previous file is deleted 
+
+A better visualization style for large number of boxes:
+	In the inout module, comment line 130 and uncomment 131, compile
+
+Program for drawing the positions of the boxes (filenames of cmd-line input 4 and 5):
+	https://www.xgraph.org/
+	
+The third output file can be opened with excel or other similar program.

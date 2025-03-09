@@ -1,0 +1,5 @@
+**/data/
+**/graphs/
+**/__pycache__/
+*.mod
+**/P03/statistics.dat
